@@ -4,7 +4,7 @@ import GoogleMapComp from '../../components/googleMap/googleMap';
 import ListTable from '../../components/listTable/listTable';
 import Loader from '../../components/loader/loader';
 import ProfileCard from '../../components/userCard/userCard';
-import { getProduct,getTRL } from '../../reduxStore/actions/productAction';
+import { getProduct, getTRL } from '../../reduxStore/actions/productAction';
 import './productPage.css';
 
 
@@ -20,7 +20,7 @@ const ProductPage = (props) => {
     const fetchProduct = async () => {
         let res = await props.getProduct()
         let trl = await props.getTRL()
-        if (res&&trl) {
+        if (res && trl) {
             let address = {
                 address: `${res.company.address.house} ${res.company.address.street}`,
                 lat: parseFloat(res.company.address.latitude),
@@ -65,7 +65,7 @@ const ProductPage = (props) => {
                                             <p>
                                                 {product.description}
                                             </p>
-                                            : <ListTable/>
+                                            : <ListTable />
                                     }
                                 </div>
                             </div>

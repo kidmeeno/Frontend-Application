@@ -24,3 +24,22 @@
 .ml-5{
     margin-left: 5px;
 }
+
+@media screen and (max-width:768px){
+    .list_wrapper{
+        /* display: unset; */
+        flex-wrap: wrap;
+        /* width: 50%; */
+    }
+    .list_col{
+        width: 100%;
+    margin-bottom: 2em;
+    }
+}
+@media screen and (max-width:768px){
+    .list_wrapper{
+        /* display: unset; */
+        /* flex-wrap: wrap; */
+        /* width: 50%; */
+    }
+}

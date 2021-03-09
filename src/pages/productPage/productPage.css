@@ -72,3 +72,31 @@ button:focus{
 .tab_section{
     transition: all 2s;
 }
+
+@media screen and (min-width:1476px){
+    .user_detail{
+        width: auto !important;
+        right: auto !important;
+        position: unset !important;
+    }
+}
+
+@media screen and (max-width:1025px){
+    
+    .user_detail{
+        width: 30% !important;
+    }
+}
+@media screen and (max-width:768px){
+    
+    .user_detail{
+        display: none !important;
+    }
+    .product_details{
+        width: 100%;
+        padding: 0;
+    }
+    .product_image img{
+        height: 65%;
+    }
+}
