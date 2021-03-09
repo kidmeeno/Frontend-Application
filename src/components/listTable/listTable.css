@@ -1,10 +1,11 @@
 .list_wrapper{
     display: flex;
-
+    flex-wrap: wrap;
 }
 .list_col{
-    width: 33.3%;
+    width: 46.3%;
     padding: 0 10px;
+    margin-bottom: 2em;
 }
 .list_header{
     font-size: 18px;
